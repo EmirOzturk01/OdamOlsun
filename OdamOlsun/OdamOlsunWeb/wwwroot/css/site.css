@@ -1,0 +1,130 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.divider-text:before,
+.divider-text:after {
+  color: white;
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #555;
+  margin: auto 0.25rem;
+  box-shadow: 0 -2px;
+}
+
+.focus-cancel:focus {
+  box-shadow: none;
+  border-color: #ff6600;
+}
+
+
+.no-border {
+  border: 2px solid #ff6600;
+  /* Varsayılan kenarlığı kaldırır */
+  box-shadow: none;
+  /* Kenarlık ve gölgeyi kaldırır */
+  border-radius: 2;
+  /* Kenarları yuvarlatmayı kaldırır */
+}
+
+.fixed-textarea {
+  width: 80%;
+  /* Textarea'nın genişliğini %100 yapar */
+  height: auto;
+  /* Yükseklik otomatik olarak ayarlanır, rows kullanılır */
+  box-sizing: border-box;
+  /* Padding ve border genişliği dahil eder */
+  resize: none;
+  /* Kullanıcıların textarea boyutunu değiştirmesini engeller */
+}
+
+
+.carousel {
+  width: auto;
+  /* Carousel genişliğini %100 yapar */
+  height: 500px;
+  /* Carousel yüksekliğini sabitler */
+}
+
+.carousel-inner {
+  height: 100%;
+  /* Carousel yüksekliğine uyum sağlar */
+  width: 100%;
+  overflow: hidden;
+  /* Taşan içerikleri gizler */
+}
+
+.carousel-item img {
+  width: 60%;
+  height: 60%;
+  /* Resmin yüksekliğini container yüksekliğine göre ayarlar */
+  object-fit: contain;
+  /* Resmi kapsayıcıya göre keser ve uyum sağlar */
+}
+
+
+.hero-section {
+  position: relative;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)),
+      url('@Url.Content("~/images/statics/roomImage.jpg")') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin: 0;
+  /* Section'ın dış marjını sıfırlar */
+  padding: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  margin-top: -17px;
+  /* Navbar ile boşluğu kaldırır */
+}
+
+.hero-section .search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+
+.card-fixed-size {
+  width: 100%;
+  max-width: 100%;
+  /* Genişliği kapsayıcıya göre ayarlar */
+  height: 400px;
+  /* Yüksekliği sabitler */
+  overflow: hidden;
+  /* Taşmaları gizler */
+}
+
+.card-body-fixed-size {
+  height: 250px;
+  /* İçeriğin yüksekliği */
+  overflow-y: auto;
+  /* İçerik yüksekliğinden taşarsa kaydırma çubuğu ekler */
+}

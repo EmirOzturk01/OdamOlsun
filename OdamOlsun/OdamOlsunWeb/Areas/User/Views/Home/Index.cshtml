@@ -1,0 +1,149 @@
+@model IEnumerable<Ilan>
+<style>
+    .hero-section {
+        position: relative;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)),
+            url('@Url.Content("~/images/statics/roomImage.jpg")') no-repeat center center;
+        background-size: cover;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        margin: 0;
+        /* Section'ın dış marjını sıfırlar */
+        padding: 0;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        margin-top: -17px;
+        /* Navbar ile boşluğu kaldırır */
+    }
+
+    .hero-section .search-bar {
+        width: 100%;
+        max-width: 600px;
+        margin-top: 20px;
+    }
+</style>
+<style>
+    .card-fixed-size {
+        width: 100%;
+        max-width: 100%;
+        /* Genişliği kapsayıcıya göre ayarlar */
+        height: 400px;
+        /* Yüksekliği sabitler */
+        overflow: hidden;
+        /* Taşmaları gizler */
+    }
+
+    .card-body-fixed-size {
+        height: 250px;
+        /* İçeriğin yüksekliği */
+        overflow-y: auto;
+        /* İçerik yüksekliğinden taşarsa kaydırma çubuğu ekler */
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 200px;
+        /* Sabit yükseklik */
+        object-fit: cover;
+        /* Resmi kırparak sığdır */
+    }
+</style>
+<div class="mt-0">
+    <section class="hero-section">
+        <h1 class="display-4 border-bottom shadow px-2">Sana uygun paylaşımlı evi bulmanın tam zamanı.</h1>
+        <div class="search-bar">
+            <a  asp-controller="Ilanlar" asp-action="Index"
+                            class="btn btn-primary btn-lg btn-block mt-3">İlanlar</a>
+        </div>
+    </section>
+</div>
+<div class="row pb-3 pt-5">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h2>Son Eklenen İlanlar</h2>
+        <a asp-controller="Ilanlar" asp-action="Index" style="text-decoration: none; color: #007bff;">Daha
+            Fazla Gör</a>
+    </div>
+    @foreach (var ilan in Model.Select((ilan, index) => new { ilan, index }))
+    {
+        <div class="col-lg-3 col-sm-6">
+            <div class="row pb-2">
+                <div class="col-12 p-1">
+                    <div class="card card-fixed-size border-0 p-3 shadow border-top border-5 border-primary rounded">
+                        <div id="carouselExampleControls-@ilan.index" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                @foreach (var image in ilan.ilan.Resims.Select((image, index) => new { image, index }))
+                                {
+                                    <div class="carousel-item @(image.index == 0 ? "active" : "")">
+                                        <img class="d-block w-100" src="@image.image.Url" alt="Image slide">
+                                    </div>
+                                }
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls-@ilan.index" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls-@ilan.index" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>
+                        <div class="card-body card-body-fixed-size pb-0">
+                            <div class="pl-1">
+                                <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@ilan.ilan.Title
+                                </p>
+                            </div>
+                            <div class="pl-0 ml-0">
+                                <p class="card-title text-opacity-75 text-center mb-0">
+                                    @{
+                                        // İlçe adını büyük harf ile formatlamak için yardımcı fonksiyon
+                                        string FormatString(string input)
+                                        {
+                                            var words = input.Split(' ');
+                                            for (int i = 0; i < words.Length; i++)
+                                            {
+                                                if (!string.IsNullOrWhiteSpace(words[i]))
+                                                {
+                                                    words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1).ToLower();
+                                                }
+                                            }
+                                            return string.Join(" ", words);
+                                        }
+
+                                        var formattedIlce = FormatString(ilan.ilan.Ilce);
+                                        var formattedSemt = FormatString(ilan.ilan.Semt);
+                                    }
+                                    @($"{ilan.ilan.Il}/{formattedIlce}/{formattedSemt}")
+                                </p>
+                            </div>
+                            <div class="pl-1">
+                                <p class="card-title text-opacity-75 text-center">
+                                    <span>
+                                        @{
+                                            @ilan.ilan.RoomAndHomeDetails
+                                        }
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <a asp-action="Details" asp-route-Id="@ilan.ilan.Id"
+                                class="btn btn-primary bg-gradient border-0 form-control">
+                                Details
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

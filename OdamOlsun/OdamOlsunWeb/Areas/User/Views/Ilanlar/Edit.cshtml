@@ -1,0 +1,129 @@
+@model IlanVM
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">İlan Güncelleme</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data" class="row">
+            <div class="border p-3">
+                @*<div asp-validation-summary="All"></div>*@
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Title" class="form-control border-0 shadow" />
+                    <label asp-for="Title" class="ms-2"></label>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="Size" class="form-control border-0 shadow" />
+                    <label asp-for="Size" class="ms-2"></label>
+                    <span asp-validation-for="Size" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="Price" class="form-control border-0 shadow" />
+                    <label asp-for="Price" class="ms-2"></label>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="Deposit" class="form-control border-0 shadow" />
+                    <label asp-for="Deposit" class="ms-2"></label>
+                    <span asp-validation-for="Deposit" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Address" class="form-control border-0 shadow" />
+                    <label asp-for="Address" class="ms-2"></label>
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="NumberOfRooms" class="form-control border-0 shadow" />
+                    <label asp-for="NumberOfRooms" class="ms-2"></label>
+                    <span asp-validation-for="NumberOfRooms" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="NumberOfFloorOfBuild" class="form-control border-0 shadow" />
+                    <label asp-for="NumberOfFloorOfBuild" class="ms-2"></label>
+                    <span asp-validation-for="NumberOfFloorOfBuild" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="FloorOfHouse" class="form-control border-0 shadow" />
+                    <label asp-for="FloorOfHouse" class="ms-2"></label>
+                    <span asp-validation-for="FloorOfHouse" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="AgeOfBuild" class="form-control border-0 shadow" />
+                    <label asp-for="AgeOfBuild" class="ms-2"></label>
+                    <span asp-validation-for="AgeOfBuild" class="text-danger"></span>
+                </div>
+                <div class="form-check py-2 col-12">
+                    <input type="checkbox" asp-for="Furnished" class="form-check-input border-1 shadow" />
+                    <label asp-for="Furnished" class="ms-2"></label>
+                    <span asp-validation-for="Furnished" class="text-danger"></span>
+                </div>
+                <div class="form-check py-2 col-12">
+                    <input type="checkbox" asp-for="Cigarette" class="form-check-input border-1 shadow" />
+                    <label asp-for="Cigarette" class="ms-2"></label>
+                    <span asp-validation-for="Cigarette" class="text-danger"></span>
+                </div>
+                <div class="form-check py-2 col-12">
+                    <input type="checkbox" asp-for="Animal" class="form-check-input border-1 shadow" />
+                    <label asp-for="Animal" class="ms-2"></label>
+                    <span asp-validation-for="Animal" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="RoomAndHomeDetails" class="form-control border-0 shadow" />
+                    <label asp-for="RoomAndHomeDetails" class="ms-2"></label>
+                    <span asp-validation-for="RoomAndHomeDetails" class="text-danger"></span>
+                </div>
+
+                <!-- İl Dropdown -->
+                <div class="form-floating py-2 col-12">
+                    <select asp-for="Il" id="il" class="form-control border-0 shadow" data-selected-il="@Model.Il">
+                        <option value="">Şehir Seçiniz</option>
+                    </select>
+                    <label asp-for="Il" class="ms-2"></label>
+                    <span asp-validation-for="Il" class="text-danger"></span>
+                </div>
+
+                <!-- İlçe Dropdown -->
+                <div class="form-floating py-2 col-12">
+                    <select asp-for="Ilce" id="ilce" class="form-control border-0 shadow" data-selected-ilce="@Model.Ilce" disabled>
+                        <option value="">İlçe Seçiniz</option>
+                    </select>
+                    <label asp-for="Ilce" class="ms-2"></label>
+                    <span asp-validation-for="Ilce" class="text-danger"></span>
+                </div>
+
+                <!-- Semt Dropdown -->
+                <div class="form-floating py-2 col-12">
+                    <select asp-for="Semt" id="semt" class="form-control border-0 shadow" data-selected-semt="@Model.Semt" disabled>
+                        <option value="">Mahalle Seçiniz</option>
+                    </select>
+                    <label asp-for="Semt" class="ms-2"></label>
+                    <span asp-validation-for="Semt" class="text-danger"></span>
+                </div>
+
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-primary form-control">Güncelle</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-area="User" asp-controller="Ilanlar" asp-action="Index" class="btn btn-outline-primary border form-control">Geri Dön</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*//Client side validation*@
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+    <script src="~/js/ilIlceSemtForm.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+}

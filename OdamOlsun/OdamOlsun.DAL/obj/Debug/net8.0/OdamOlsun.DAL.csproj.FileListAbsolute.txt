@@ -1,0 +1,15 @@
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/bin/Debug/net8.0/OdamOlsun.DAL.deps.json
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/bin/Debug/net8.0/OdamOlsun.DAL.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/bin/Debug/net8.0/OdamOlsun.DAL.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/bin/Debug/net8.0/OdamOlsun.Entities.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/bin/Debug/net8.0/OdamOlsun.Entities.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.csproj.AssemblyReference.cache
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.AssemblyInfoInputs.cache
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.AssemblyInfo.cs
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.csproj.CoreCompileInputs.cache
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsu.DA2A22AC.Up2Date
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/refint/OdamOlsun.DAL.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/OdamOlsun.DAL.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/Debug/net8.0/ref/OdamOlsun.DAL.dll

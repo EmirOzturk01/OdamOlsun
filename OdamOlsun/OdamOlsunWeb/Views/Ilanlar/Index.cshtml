@@ -1,0 +1,185 @@
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using Microsoft.IdentityModel.Tokens;
+@using Microsoft.AspNetCore.WebUtilities
+
+
+@model IPagedList<Ilan>
+
+<div class="container bg-primary opacity-75 rounded-3 mb-4">
+  <div class="row justify-content-center align-items-center">
+    <!-- Şehir Dropdown -->
+    <div class="py-2 pr-2 col-md-3 d-flex align-items-center justify-content-center border-3 border-primary">
+      <select id="il" class="form-control border-0 shadow">
+        <option value="" selected>Şehir Seçiniz</option>
+      </select>
+    </div>
+
+    <!-- İlçe Dropdown -->
+    <div class="py-2 col-md-3 d-flex align-items-center justify-content-center">
+      <select id="ilce" class="form-control border-0 shadow" disabled>
+        <option value="">İlçe Seçiniz</option>
+      </select>
+      <label class="ms-2"></label>
+    </div>
+
+    <!-- Semt Dropdown -->
+    <div class="py-2 col-md-3 d-flex align-items-center justify-content-center">
+      <select id="semt" class="form-control border-0 shadow" disabled>
+        <option value="">Mahalle Seçiniz</option>
+      </select>
+      <label class="ms-2"></label>
+    </div>
+
+    <!-- Search Button -->
+    <div class="py-2 col-md-1 d-flex justify-content-center">
+      <button id="searchButton" class="btn btn-primary"><i class="bi bi-search"></i> Ara</button>
+    </div>
+    <div class="py-2 col-md-1 d-flex justify-content-center">
+      <a href="@Url.Action("Index", "Ilanlar")" class="btn btn-primary">
+        <i class="bi bi-arrow-clockwise"></i>Reset
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<section style="background-color: #eee;" class="rounded-3">
+  <div class="container py-2">
+    @if (Model == null || !Model.Any())
+    {
+      <p class="text-center">Aradığınız filtrelere göre ilan bulunamadı.</p>
+    }
+    else
+    {
+      <div class="text-center pt-1">
+        <h4>@ViewBag.TotalIlans adet ilan bulunmuştur.</h4>
+      </div>
+    }
+    @foreach (var ilan in Model)
+    {
+      var firstImageUrl = ilan.Resims.FirstOrDefault().Url;
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-12 col-xl-10">
+          <div class="card shadow-0 border rounded-2">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                  <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                    <img src="@firstImageUrl" class="w-100" />
+                    <a href="#!">
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                  <h5>@ilan.Title</h5>
+                  <div class="d-flex flex-row">
+                    @{
+                      // İlçe adını büyük harf ile formatlamak için yardımcı fonksiyon
+                      string FormatString(string input)
+                      {
+                        var words = input.Split(' ');
+                        for (int i = 0; i < words.Length; i++)
+                        {
+                          if (!string.IsNullOrWhiteSpace(words[i]))
+                          {
+                            words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1).ToLower();
+                          }
+                        }
+                        return string.Join(" ", words);
+                      }
+
+                      var formattedIlce = FormatString(@ilan.Ilce);
+                      var formattedSemt = FormatString(@ilan.Semt);
+                    }
+                    @($"{@ilan.Il}/{formattedIlce}/{formattedSemt}")
+                  </div>
+                  <div class="mt-1 mb-0 text-muted small">
+                    <span>@ilan.Size m²</span>
+                    <span class="text-primary"> • </span>
+                    <span>@(ilan.Furnished ? "Eşyalı" : "Eşya değil")</span>
+                    <span class="text-primary"> • </span>
+                    <span>@ilan.NumberOfRooms odalı Ev</span>
+                  </div>
+                  <div class="mb-2 text-muted small">
+                    <span>Hayvan @(ilan.Animal ? "bakılabilir" : "bakılamaz")</span>
+                    <span class="text-primary"> • </span>
+                    <span>Sigara @(ilan.Cigarette ? "içilebilir" : "içilemez")</span>
+                  </div>
+                  <p class="text-truncate mb-4 mb-md-0">
+                    @ilan.RoomAndHomeDetails
+                  </p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start pt-1">
+                  <div class="d-flex flex-row align-items-center mb-1 col-12">
+                    <h4 class="mb-1 me-1">Kira: @ilan.Price</h4>
+                  </div>
+                  <div class="d-flex flex-row align-items-center mb-1 col-12">
+                    <h6 class="text-warning">Depozito: @ilan.Deposit</h6>
+                  </div>
+                  <div class="d-flex flex-column mt-4">
+                    <a asp-action="Details" asp-route-Id="@ilan.Id" class="btn btn-primary btn-sm">Details</a>
+                    <!-- #region <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm" asp-action="Details" asp-route-Id="@ilan.Id">Details</button>-->
+                    <!-- #region <button data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button>-->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+
+
+  </div>
+</section>
+<div class="d-flex justify-content-center mt-1">
+  @Html.PagedListPager(
+      (IPagedList)Model,
+      page =>
+      {
+        var currentUrl = $"{Context.Request.Path}{Context.Request.QueryString}";
+        var queryParameters = Context.Request.Query;
+        string il;
+        string ilce;
+        string semt;
+        if (queryParameters.ContainsKey("il"))
+        {
+          il = queryParameters["il"].FirstOrDefault();
+          if (queryParameters.ContainsKey("ilce"))
+          {
+            ilce = queryParameters["ilce"].FirstOrDefault();
+
+            if (queryParameters.ContainsKey("semt"))
+            {
+              semt = queryParameters["semt"].FirstOrDefault();
+              return $"/Ilanlar?il={il}?ilce={ilce}?semt={semt}&page={page}";
+            }
+            return $"/Ilanlar?il={il}?ilce={ilce}&page={page}";
+
+          }
+          return $"/Ilanlar?il={il}&page={page}";
+
+        }
+        return $"/Ilanlar?page={page}";
+      },
+      //page => $"/Ilanlar?page={page}",
+
+      new X.PagedList.Web.Common.PagedListRenderOptions
+  {
+    LiElementClasses = new string[] { "page-item" },
+    PageClasses = new string[] { "page-link" }
+  }
+      )
+</div>
+
+@section Scripts {
+  <script src="~/js/ilIlceSemt.js" asp-append-version="true"></script>
+  <script src="~/js/filter.js" asp-append-version="true"></script>
+}

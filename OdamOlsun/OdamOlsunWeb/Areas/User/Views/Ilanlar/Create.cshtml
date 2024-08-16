@@ -1,0 +1,243 @@
+@model IlanVM
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">İlan Oluşturma</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" enctype="multipart/form-data" class="row">
+            <div class="border p-3">
+                @*<div asp-validation-summary="All"></div>*@
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Title" class="form-control border-0 shadow" />
+                    <label asp-for="Title" class="ms-2"></label>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="Size" class="form-control border-0 shadow" />
+                    <label asp-for="Size" class="ms-2"></label>
+                    <span asp-validation-for="Size" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="Price" class="form-control border-0 shadow" />
+                    <label asp-for="Price" class="ms-2"></label>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="Deposit" class="form-control border-0 shadow" />
+                    <label asp-for="Deposit" class="ms-2"></label>
+                    <span asp-validation-for="Deposit" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="Address" class="form-control border-0 shadow" />
+                    <label asp-for="Address" class="ms-2"></label>
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="NumberOfRooms" class="form-control border-0 shadow" />
+                    <label asp-for="NumberOfRooms" class="ms-2"></label>
+                    <span asp-validation-for="NumberOfRooms" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="NumberOfFloorOfBuild" class="form-control border-0 shadow" />
+                    <label asp-for="NumberOfFloorOfBuild" class="ms-2"></label>
+                    <span asp-validation-for="NumberOfFloorOfBuild" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="FloorOfHouse" class="form-control border-0 shadow" />
+                    <label asp-for="FloorOfHouse" class="ms-2"></label>
+                    <span asp-validation-for="FloorOfHouse" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input type="number" asp-for="AgeOfBuild" class="form-control border-0 shadow" />
+                    <label asp-for="AgeOfBuild" class="ms-2"></label>
+                    <span asp-validation-for="AgeOfBuild" class="text-danger"></span>
+                </div>
+                <div class="form-check py-2 col-12">
+                    <input type="checkbox" asp-for="Furnished" class="form-check-input border-1 shadow" />
+                    <label asp-for="Furnished" class="ms-2"></label>
+                    <span asp-validation-for="Furnished" class="text-danger"></span>
+                </div>
+                <div class="form-check py-2 col-12">
+                    <input type="checkbox" asp-for="Cigarette" class="form-check-input border-1 shadow" />
+                    <label asp-for="Cigarette" class="ms-2"></label>
+                    <span asp-validation-for="Cigarette" class="text-danger"></span>
+                </div>
+                <div class="form-check py-2 col-12">
+                    <input type="checkbox" asp-for="Animal" class="form-check-input border-1 shadow" />
+                    <label asp-for="Animal" class="ms-2"></label>
+                    <span asp-validation-for="Animal" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                    <input asp-for="RoomAndHomeDetails" class="form-control border-0 shadow" />
+                    <label asp-for="RoomAndHomeDetails" class="ms-2"></label>
+                    <span asp-validation-for="RoomAndHomeDetails" class="text-danger"></span>
+                </div>
+
+                <!-- İl Dropdown -->
+                <div class="form-floating py-2 col-12">
+                    <select id="il" class="form-control border-0 shadow" asp-for="Il">
+                        <option value="">Şehir Seçiniz</option>
+                    </select>
+                    <label asp-for="Il" class="ms-2"></label>
+                    <span asp-validation-for="Il" class="text-danger"></span>
+                </div>
+
+                <!-- İlçe Dropdown -->
+                <div class="form-floating py-2 col-12">
+                    <select id="ilce" class="form-control border-0 shadow" asp-for="Ilce" disabled>
+                        <option value="">İlçe Seçiniz</option>
+                    </select>
+                    <label asp-for="Ilce" class="ms-2"></label>
+                    <span asp-validation-for="Ilce" class="text-danger"></span>
+                </div>
+
+                <!-- Semt Dropdown -->
+                <div class="form-floating py-2 col-12">
+                    <select id="semt" class="form-control border-0 shadow" asp-for="Semt" disabled>
+                        <option value="">Mahalle Seçiniz</option>
+                    </select>
+                    <label asp-for="Semt" class="ms-2"></label>
+                    <span asp-validation-for="Semt" class="text-danger"></span>
+                </div>
+
+
+                @*<div class="form-floating py-2 col-12">
+                <input asp-for="Il" class="form-control border-0 shadow"/>
+                <label asp-for="Il" class="ms-2"></label>
+                <span asp-validation-for="Il" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                <input asp-for="Ilce" class="form-control border-0 shadow"/>
+                <label asp-for="Ilce" class="ms-2"></label>
+                <span asp-validation-for="Ilce" class="text-danger"></span>
+                </div>
+                <div class="form-floating py-2 col-12">
+                <input asp-for="Semt" class="form-control border-0 shadow"/>
+                <label asp-for="Semt" class="ms-2"></label>
+                <span asp-validation-for="Semt" class="text-danger"></span>
+                </div>*@
+                <div class="form-floating py-2 col-12">
+                    <input type="file" id="resimler" name="Resims" multiple class="form-control border-0 shadow" />
+                    <label for="resimler" class="ms-2">Resimler</label>
+                    <span asp-validation-for="@Model.Resimler" class="text-danger"></span>
+                </div>
+
+                <div id="imagePreview" class="py-2 col-12">
+                    @* Seçilen resimler burada gösterilecek *@
+                </div>
+
+
+                <div class="row pt-2">
+                    <div class="col-6 col-md-3">
+                        <button type="submit" class="btn btn-primary form-control">Oluştur</button>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <a asp-area="User" asp-controller="Ilanlar" asp-action="Index"
+                            class="btn btn-outline-primary border form-control">Geri Dön</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@*//Client side validation*@
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+<script src="~/js/ilIlceSemtForm.js" asp-append-version="true"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+    let filesArray = [];
+
+    document.getElementById('resimler').addEventListener('change', function () {
+        const imagePreview = document.getElementById('imagePreview');
+        const newFiles = Array.from(this.files);
+
+        
+        // Dosya sayısını kontrol et
+        if (filesArray.length + newFiles.length > 10) {
+            toastr.warning('En fazla 10 resim ekleyebilirsiniz.');
+            return;
+        }
+
+        newFiles.forEach(file => {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const imgContainer = document.createElement('div');
+                imgContainer.style.position = 'relative';
+                imgContainer.style.display = 'inline-block';
+                imgContainer.style.margin = '10px';
+
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '200px';
+                img.style.height = 'auto';
+
+                const removeButton = document.createElement('span');
+                removeButton.textContent = '×';
+                removeButton.style.position = 'absolute';
+                removeButton.style.top = '5px';
+                removeButton.style.right = '5px';
+                removeButton.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+                removeButton.style.color = 'red';
+                removeButton.style.cursor = 'pointer';
+                removeButton.style.padding = '2px 5px';
+                removeButton.style.borderRadius = '50%';
+                removeButton.style.fontSize = '16px';
+                removeButton.style.fontWeight = 'bold';
+
+                removeButton.addEventListener('click', function () {
+                    imgContainer.remove();
+                    const index = filesArray.indexOf(file);
+                    if (index !== -1) {
+                        filesArray.splice(index, 1);
+                    }
+                    updateFileInput();
+                });
+
+                imgContainer.appendChild(img);
+                imgContainer.appendChild(removeButton);
+                imagePreview.appendChild(imgContainer);
+            }
+            reader.readAsDataURL(file);
+        });
+
+        filesArray = filesArray.concat(newFiles);
+        updateFileInput();
+
+    });
+
+    function updateFileInput() {
+        const dataTransfer = new DataTransfer();
+        filesArray.forEach(file => {
+            dataTransfer.items.add(file);
+        });
+        const fileInput = document.getElementById('resimler');
+        fileInput.files = dataTransfer.files;
+        updateFileLabel();
+    }
+
+    function updateFileLabel() {
+        const fileInput = document.getElementById('resimler');
+        const label = document.querySelector('label[for="resimler"]');
+        label.textContent = fileInput.files.length + " dosya seçildi";
+    }
+
+    // Initial label update in case of existing files
+    document.addEventListener('DOMContentLoaded', function () {
+        updateFileLabel();
+    });
+</script>
+
+
+
+}

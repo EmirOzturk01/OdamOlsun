@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+<div class="col-12">
+    <div class=" text-center border rounded-top-pill border-primary-subtle p-3 shadow bg-secondary">
+        <h1 class="">Profile</h1>
+    </div>
+    <partial name="_StatusMessage" for="StatusMessage" />
+    <div class="row mx-0">
+        <div class="col-md-12 border rounded-bottom shadow border-primary-subtle">
+            <form id="profile-form" class="row pt-3" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                <div class="form-floating mb-3  col-md-6">
+                    <input asp-for="Username" class="form-control" placeholder="Please choose your username."
+                        disabled />
+                    <label asp-for="Username" class="ms-2 form-label"></label>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                    <input asp-for="Input.PhoneNumber" class="form-control"
+                        placeholder="Please enter your phone number." />
+                    <label asp-for="Input.PhoneNumber" class="ms-2 form-label"></label>
+                    <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                    <input asp-for="Input.Name" class="form-control" placeholder="Please enter your phone number." />
+                    <label asp-for="Input.Name" class="ms-2 form-label"></label>
+                    <span asp-validation-for="Input.Name" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                    <input asp-for="Input.Surname" class="form-control" placeholder="Please enter your phone number." />
+                    <label asp-for="Input.Surname" class="ms-2 form-label"></label>
+                    <span asp-validation-for="Input.Surname" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                    <input asp-for="Input.SocialInstagram" class="form-control" aria-required="true" placeholder="" />
+                    <label asp-for="Input.SocialInstagram" class="ms-2 form-label"><i class="bi bi-instagram "></i>
+                        Instagram Username</label>
+                    <span asp-validation-for="Input.SocialInstagram" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3 col-md-6">
+                    <input asp-for="Input.SocialSnapchat" class="form-control" aria-required="true" placeholder="" />
+                    <label asp-for="Input.SocialSnapchat" class="ms-2 form-label"><i class="bi bi-snapchat"></i>
+                        Snapchat Username</label>
+                    <span asp-validation-for="Input.SocialSnapchat" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <button id="update-profile-button" type="submit"
+                        class="w-100 btn btn-lg btn-primary mb-3">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

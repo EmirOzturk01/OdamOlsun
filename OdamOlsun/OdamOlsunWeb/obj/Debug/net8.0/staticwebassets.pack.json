@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/obj/Debug/net8.0/scopedcss/projectbundle/OdamOlsunWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets/OdamOlsunWeb.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/00c658e6-be2c-4546-a9c2-02aa9884926e.jpg",
+      "PackagePath": "staticwebassets/images/ilan/00c658e6-be2c-4546-a9c2-02aa9884926e.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/1841f230-d25e-4e66-8398-8395bc56f74a.jpg",
+      "PackagePath": "staticwebassets/images/ilan/1841f230-d25e-4e66-8398-8395bc56f74a.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/54d03742-23fc-42a4-844b-f4a9348fd402.jpeg",
+      "PackagePath": "staticwebassets/images/ilan/54d03742-23fc-42a4-844b-f4a9348fd402.jpeg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/556215ef-5742-473f-9471-bbdc09a72f8a.jpeg",
+      "PackagePath": "staticwebassets/images/ilan/556215ef-5742-473f-9471-bbdc09a72f8a.jpeg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/57803cd4-c0e4-4df1-8ff5-34c4ee3b99be.jpg",
+      "PackagePath": "staticwebassets/images/ilan/57803cd4-c0e4-4df1-8ff5-34c4ee3b99be.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/7d547323-e501-4b05-bbf8-c8b0d904a944.jpg",
+      "PackagePath": "staticwebassets/images/ilan/7d547323-e501-4b05-bbf8-c8b0d904a944.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/81f9333c-efd5-4fbd-9bc6-66aec304821e.jpg",
+      "PackagePath": "staticwebassets/images/ilan/81f9333c-efd5-4fbd-9bc6-66aec304821e.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/82f30065-ac2a-4f21-9666-4644051e38d2.jpeg",
+      "PackagePath": "staticwebassets/images/ilan/82f30065-ac2a-4f21-9666-4644051e38d2.jpeg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/90a93d54-c550-4e07-b7ab-c6d267900c8d.jpg",
+      "PackagePath": "staticwebassets/images/ilan/90a93d54-c550-4e07-b7ab-c6d267900c8d.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/9a9a7c91-25b1-4aec-b3f8-71824685f55f.jpg",
+      "PackagePath": "staticwebassets/images/ilan/9a9a7c91-25b1-4aec-b3f8-71824685f55f.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/a9dbdebd-178a-4abd-95b9-55752675e82f.jpeg",
+      "PackagePath": "staticwebassets/images/ilan/a9dbdebd-178a-4abd-95b9-55752675e82f.jpeg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/c1939ec5-fa0f-4adc-8c2c-970e838f6e55.jpg",
+      "PackagePath": "staticwebassets/images/ilan/c1939ec5-fa0f-4adc-8c2c-970e838f6e55.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/ceaf48c2-a168-4a6d-af1c-de1c1d9f4a56.jpg",
+      "PackagePath": "staticwebassets/images/ilan/ceaf48c2-a168-4a6d-af1c-de1c1d9f4a56.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/d0e66573-6817-46b8-8c80-cfe8b1e5a75e.jpg",
+      "PackagePath": "staticwebassets/images/ilan/d0e66573-6817-46b8-8c80-cfe8b1e5a75e.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/de3da08b-92f7-4704-9c53-999662deb2c4.jpg",
+      "PackagePath": "staticwebassets/images/ilan/de3da08b-92f7-4704-9c53-999662deb2c4.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/e23bfbad-4e98-4f41-848a-5d79ed81ccd1.jpg",
+      "PackagePath": "staticwebassets/images/ilan/e23bfbad-4e98-4f41-848a-5d79ed81ccd1.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/ilan/fdab5ec6-f6b9-48db-afa9-7c687dd3780f.jpeg",
+      "PackagePath": "staticwebassets/images/ilan/fdab5ec6-f6b9-48db-afa9-7c687dd3780f.jpeg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/images/statics/roomImage.jpg",
+      "PackagePath": "staticwebassets/images/statics/roomImage.jpg"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/js/filter.js",
+      "PackagePath": "staticwebassets/js/filter.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/js/ilIlceSemt.js",
+      "PackagePath": "staticwebassets/js/ilIlceSemt.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/js/ilIlceSemtForm.js",
+      "PackagePath": "staticwebassets/js/ilIlceSemtForm.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.OdamOlsunWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.OdamOlsunWeb.props",
+      "PackagePath": "build\\OdamOlsunWeb.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.OdamOlsunWeb.props",
+      "PackagePath": "buildMultiTargeting\\OdamOlsunWeb.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.OdamOlsunWeb.props",
+      "PackagePath": "buildTransitive\\OdamOlsunWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

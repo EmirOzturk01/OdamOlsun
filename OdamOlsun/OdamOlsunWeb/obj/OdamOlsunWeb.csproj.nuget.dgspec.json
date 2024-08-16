@@ -1,0 +1,392 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/OdamOlsunWeb.csproj": {}
+  },
+  "projects": {
+    "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.BL/OdamOlsun.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.BL/OdamOlsun.BL.csproj",
+        "projectName": "OdamOlsun.BL",
+        "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.BL/OdamOlsun.BL.csproj",
+        "packagesPath": "/Users/emirozturk/.nuget/packages/",
+        "outputPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.BL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emirozturk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj",
+        "projectName": "OdamOlsun.DAL",
+        "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj",
+        "packagesPath": "/Users/emirozturk/.nuget/packages/",
+        "outputPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emirozturk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj",
+        "projectName": "OdamOlsun.Entities",
+        "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj",
+        "packagesPath": "/Users/emirozturk/.nuget/packages/",
+        "outputPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emirozturk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/OdamOlsun.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/OdamOlsun.Utilities.csproj",
+        "projectName": "OdamOlsun.Utilities",
+        "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/OdamOlsun.Utilities.csproj",
+        "packagesPath": "/Users/emirozturk/.nuget/packages/",
+        "outputPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emirozturk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.DAL/OdamOlsun.DAL.csproj"
+              },
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/OdamOlsunWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/OdamOlsunWeb.csproj",
+        "projectName": "OdamOlsunWeb",
+        "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/OdamOlsunWeb.csproj",
+        "packagesPath": "/Users/emirozturk/.nuget/packages/",
+        "outputPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsunWeb/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emirozturk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.BL/OdamOlsun.BL.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.BL/OdamOlsun.BL.csproj"
+              },
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Entities/OdamOlsun.Entities.csproj"
+              },
+              "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/OdamOlsun.Utilities.csproj": {
+                "projectPath": "/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/OdamOlsun.Utilities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

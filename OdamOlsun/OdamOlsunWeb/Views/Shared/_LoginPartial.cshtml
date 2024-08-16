@@ -1,0 +1,66 @@
+@using Microsoft.AspNetCore.Identity
+@using OdamOlsun.Entities.Models.Concrete
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+
+        var user = await UserManager.GetUserAsync(User);
+        // var userName = user?.Name; // Kullanıcı adı null olabilir, bu yüzden güvenli bir şekilde alın
+
+        <!-- User loginname
+                    <li class="nav-item">
+                        <a id="manage" class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@user.Name
+        @user.Surname</a>
+                    </li>
+                    -->
+
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-person-circle"></i> @user.Name @user.Surname
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" asp-area="User" asp-controller="Ilanlar" asp-action="Index"
+                        title="Manage">
+                        İlanlarım
+                    </a>
+                </li>
+                <li>
+                    <form id="logoutForm"  class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                        asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button id="logout" type="submit" class="dropdown-item btn btn-link border-0">
+                            Logout
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+        <!-- logout navbar
+                    <li class="nav-item">
+                        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout"
+                            asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button id="logout" type="submit" class="nav-link btn btn-link border-0">Logout</button>
+                        </form>
+                    </li>
+                    -->
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link" id="register" asp-area="Identity" asp-page="/Account/Register"><i
+                    class="bi bi-person-circle"></i> Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="login" asp-area="Identity" asp-page="/Account/Login"><i
+                    class="bi bi-box-arrow-in-right"></i> Login</a>
+        </li>
+    }
+</ul>

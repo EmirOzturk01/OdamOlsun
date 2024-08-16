@@ -1,0 +1,17 @@
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.Utilities.deps.json
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.Utilities.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.Utilities.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.csproj.AssemblyReference.cache
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.AssemblyInfoInputs.cache
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.AssemblyInfo.cs
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.csproj.CoreCompileInputs.cache
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/refint/OdamOlsun.Utilities.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsun.Utilities.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/ref/OdamOlsun.Utilities.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.DAL.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.Entities.dll
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.Entities.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/bin/Debug/net8.0/OdamOlsun.DAL.pdb
+/Users/emirozturk/Desktop/OdamOlsun/OdamOlsun.Utilities/obj/Debug/net8.0/OdamOlsu.0A7D21E9.Up2Date

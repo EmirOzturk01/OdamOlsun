@@ -1,0 +1,300 @@
+@using System.Text.RegularExpressions
+
+@model Ilan
+<style>
+    .no-border {
+        border: 2px solid #ff6600;
+        /* Varsayılan kenarlığı kaldırır */
+        box-shadow: none;
+        /* Kenarlık ve gölgeyi kaldırır */
+        border-radius: 2;
+        /* Kenarları yuvarlatmayı kaldırır */
+    }
+
+    .fixed-textarea {
+        width: 80%;
+        /* Textarea'nın genişliğini %100 yapar */
+        height: auto;
+        /* Yükseklik otomatik olarak ayarlanır, rows kullanılır */
+        box-sizing: border-box;
+        /* Padding ve border genişliği dahil eder */
+        resize: none;
+        /* Kullanıcıların textarea boyutunu değiştirmesini engeller */
+    }
+</style>
+
+<style>
+    .carousel {
+        width: auto;
+        /* Carousel genişliğini %100 yapar */
+        height: 500px;
+        /* Carousel yüksekliğini sabitler */
+    }
+
+    .carousel-inner {
+        height: 100%;
+        /* Carousel yüksekliğine uyum sağlar */
+        width: 100%;
+        overflow: hidden;
+        /* Taşan içerikleri gizler */
+    }
+
+    .carousel-item img {
+        width: 60%;
+        height: 60%;
+        /* Resmin yüksekliğini container yüksekliğine göre ayarlar */
+        object-fit: contain;
+        /* Resmi kapsayıcıya göre keser ve uyum sağlar */
+    }
+</style>
+
+
+
+<div class="card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient text-light py-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="text-white text-uppercase">@Model.Title</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="py-3">
+            <div class="row">
+                <div class="col-6 col-md-2 offset-lg-1 pb-1">
+                    <a href="javascript:history.back()"
+                        class="btn btn-outline-primary bg-gradient mb-5 fw-semibold btn-sm text-uppercase">
+                        <small>Geri Dön</small>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1 text-center mb-3">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls" class="carousel slide">
+                        <div class="carousel-indicators">
+                            @{
+                                int current = 0;
+                                foreach (var resim in Model.Resims)
+                                {
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="@current"
+                                        class="@(resim == Model.Resims.First() ? "active" : "") border border-primary rounded bg-primary"
+                                        aria-current="true" aria-label="Slide 1"></button>
+                                    current++;
+                                }
+                            }
+
+                        </div>
+                        <div class="carousel-inner">
+                            @foreach (var resim in Model.Resims)
+                            {
+                                <div class="carousel-item @(resim == Model.Resims.First() ? "active" : "")">
+                                    <img src="@resim.Url" class="d-block mx-auto" alt="Resim">
+                                </div>
+                            }
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-primary" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- İlan Detayları -->
+                    <div class="col-12 col-md-6 pb-2">
+                        <span class="badge"></span>
+                    </div>
+                    <div class="row text-center">
+                        <h4 class="text-dark text-opacity-50 ">
+                            @{
+                                // İlçe adını büyük harf ile formatlamak için yardımcı fonksiyon
+                                string FormatString(string input)
+                                {
+                                    var words = input.Split(' ');
+                                    for (int i = 0; i < words.Length; i++)
+                                    {
+                                        if (!string.IsNullOrWhiteSpace(words[i]))
+                                        {
+                                            words[i] = char.ToUpper(words[i][0]) + words[i].Substring(1).ToLower();
+                                        }
+                                    }
+                                    return string.Join(" ", words);
+                                }
+
+                                var formattedIlce = FormatString(@Model.Ilce);
+                                var formattedSemt = FormatString(@Model.Semt);
+                            }
+                            @($"{@Model.Il}/{formattedIlce}/{formattedSemt}")
+                            </h6>
+                    </div>
+                    <div class="row ps-2">
+                        <h6 class="text-dark text-opacity-50  pb-2">
+                            <span class="text-decoration-line-through">
+
+                            </span>
+                        </h6>
+                    </div>
+
+                    <div>
+                        <div class="row text-center justify-content-center">
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Fiyat</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Depozito</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">m²</div>
+                            </div>
+                        </div>
+                        <div class="row text-center justify-content-center">
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.Price</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.Deposit</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.Size</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border border-dark border-3 col-9 mx-auto">
+                    <div>
+                        <div class="row text-center  justify-content-center">
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Oda Sayısı</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Bina Kat</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Daire Kat</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                                <div class="text-dark text-opacity-50 fw-semibold">Bina Yaşı</div>
+                            </div>
+                        </div>
+                        <div class="row text-center  justify-content-center">
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.NumberOfRooms</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.NumberOfFloorOfBuild</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.FloorOfHouse</div>
+                            </div>
+                            <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                                <div>@Model.AgeOfBuild</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border border-dark border-3 col-9 mx-auto">
+                    <div class="row text-center ps-2 pt-4 justify-content-center">
+                        <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                            <div class="text-dark text-opacity-50 fw-semibold"><i class="fa-solid fa-cat fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                            <div class="text-dark text-opacity-50 fw-semibold"><i class="fa-solid fa-smoking fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="p-1 col-3 col-lg-2 bg-white border-bottom">
+                            <div class="text-dark text-opacity-50 fw-semibold"><i class="fa-solid fa-couch fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center ps-2 justify-content-center">
+                        <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                            <div>@if (Model.Animal)
+                                {
+                                    <i class="fa-solid fa-check fa-2x"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-x fa-2x"></i>
+                                }
+                            </div>
+                        </div>
+                        <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                            <div>
+                                @if (Model.Cigarette)
+                                {
+                                    <i class="fa-solid fa-check fa-2x"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-x fa-2x"></i>
+                                }
+                            </div>
+                        </div>
+                        <div class="p-1 col-3 col-lg-2 bg-white text-warning fw-bold">
+                            <div>
+                                @if (Model.Furnished)
+                                {
+                                    <i class="fa-solid fa-check fa-2x"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-x fa-2x"></i>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center ps-2 pt-4 justify-content-center">
+                        <p class="text-primary lh-sm mb-1 pb-0">Açıklama</p>
+                        <textarea readonly class="form-control no-border fixed-textarea "
+                            rows="5">@Model.RoomAndHomeDetails</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-info card shadow border-0 mt-4">
+    <div class="card-header bg-secondary bg-gradient text-light py-4">
+        @if (User.IsInRole(SD.Role_Customer) || User.IsInRole(SD.Role_Admin))
+        {
+            <h4 class="text-center">@Model.ApplicationUser.Name @Model.ApplicationUser.Surname</h4>
+        } else {<h4 class="text-center">İlanı Yayınlayan Kişinin Bilgilerini Görmek İçin Üye Olunuz!</h4>}
+    </div>
+    @if (User.IsInRole(SD.Role_Customer) || User.IsInRole(SD.Role_Admin))
+    {
+        <div class="card-body">
+            <div class="text-center">
+                <!--<img src="https://placehold.co/100x100" class="rounded-circle mb-3" alt="Profil Fotoğraf" />-->
+                <!--<h5 class="mb-2">Ad Soyad</h5>-->
+                @{
+                    var phoneNumber = Model.ApplicationUser.PhoneNumber;
+                    string formattedNumber;
+                    formattedNumber = PhoneNumberFormatter.FormatPhoneNumber(phoneNumber);
+                }
+                <p class="text-muted">Telefon: <a href="tel:@Model.ApplicationUser.PhoneNumber"
+                        class="text-primary">@formattedNumber</a></p>
+                <p class="text-muted">E-mail: <a href="mailto:@Model.ApplicationUser.Email"
+                        class="text-primary">@Model.ApplicationUser.Email</a></p>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="https://www.snapchat.com/add/@Model.ApplicationUser.SocialSnapchat" class="text-decoration-none me-3"
+                    target="_blank">
+                    <i class="fab fa-snapchat fa-2x text-primary"></i>
+                </a>
+                <a href="https://www.instagram.com/@Model.ApplicationUser.SocialInstagram" class="text-decoration-none"
+                    target="_blank">
+                    <i class="fab fa-instagram fa-2x text-danger"></i>
+                </a>
+            </div>
+        </div>
+    }
+
+</div>
